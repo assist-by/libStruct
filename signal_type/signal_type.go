@@ -1,9 +1,9 @@
-package autrolibrary
+package signaltype
 
 type SignalType int
 
 const (
-	Long SignalType = iota
+	Long SignalType = iota + 1
 	Short
 	Maybe_Long
 	Maybe_Short
@@ -15,8 +15,9 @@ var signalTypeNames = [...]string{
 }
 
 func (t SignalType) String() string {
-	if t < Long || t > No_Signal {
+	idx := t - 1
+	if idx < Long || idx > No_Signal {
 		return "Unknown"
 	}
-	return signalTypeNames[t]
+	return signalTypeNames[idx]
 }
