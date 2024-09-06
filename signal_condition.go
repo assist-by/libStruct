@@ -13,10 +13,8 @@ type SignalDetail struct {
 	EMA200Diff            float64
 	ParabolicSARValue     float64
 	ParabolicSARDiff      float64
-	MACDNowMACDLine       float64
-	MACDNowSignalLine     float64
-	MACDPrevMACDLine      float64
-	MACDPrevSignalLine    float64
+	MACDMACDLine          float64
+	MACDSignalLine        float64
 	MACDHistogram         float64
 }
 
