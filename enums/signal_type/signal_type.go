@@ -1,4 +1,4 @@
-package enums
+package signalType
 
 type SignalType int
 
