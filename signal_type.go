@@ -1,4 +1,4 @@
-package signalType
+package libStruct
 
 type SignalType int
 
