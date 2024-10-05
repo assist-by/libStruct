@@ -1,4 +1,4 @@
-package autrolibrary
+package signal
 
 type SignalConditions struct {
 	Long  SignalDetail

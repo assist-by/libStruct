@@ -1,4 +1,4 @@
-package autrolibrary
+package candle
 
 type CandleData struct {
 	OpenTime                 int64

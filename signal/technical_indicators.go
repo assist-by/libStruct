@@ -1,4 +1,4 @@
-package autrolibrary
+package signal
 
 type TechnicalIndicators struct {
 	EMA200       float64
