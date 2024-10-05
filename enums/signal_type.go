@@ -1,4 +1,4 @@
-package libStruct
+package enums
 
 type SignalType int
 
