@@ -1,4 +1,4 @@
-package signal
+package libStruct
 
 type TechnicalIndicators struct {
 	EMA200       float64

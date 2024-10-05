@@ -1,4 +1,4 @@
-package signal
+package libStruct
 
 type SignalConditions struct {
 	Long  SignalDetail

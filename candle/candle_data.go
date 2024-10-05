@@ -1,4 +1,4 @@
-package candle
+package libStruct
 
 type CandleData struct {
 	OpenTime                 int64
