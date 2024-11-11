@@ -1,7 +1,7 @@
 package libStruct
 
 type CoinTracker struct {
-	symbol         string
-	lastSignal     string
-	lastSignalTime int64
+	Symbol         string
+	LastSignal     string
+	LastSignalTime int64
 }
