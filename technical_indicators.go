@@ -1,4 +1,4 @@
-package signal
+package libStruct
 
 type TechnicalIndicators struct {
 	EMA200       float64
@@ -7,7 +7,7 @@ type TechnicalIndicators struct {
 	SignalLine   float64
 }
 
-func New(ema200, parabolicSar, macdLine, signalLine float64) (*TechnicalIndicators, error) {
+func NewTechnicalIndicators(ema200, parabolicSar, macdLine, signalLine float64) (*TechnicalIndicators, error) {
 	return &TechnicalIndicators{
 		EMA200:       ema200,
 		ParabolicSAR: parabolicSar,
