@@ -1,5 +1,27 @@
 package libStruct
 
+type SignalType int
+
+const (
+	SIGNAL_LONG SignalType = iota + 1
+	SIGNAL_SHORT
+	SIGNAL_MAYBE_LONG
+	SIGNAL_MAYBE_SHORT
+	SIGNAL_NO_SIGANL
+)
+
+var signalTypeNames = [...]string{
+	"LONG", "SHORT", "MAYBE LONG", "MAYBE SHORT", "NO SIGNAL",
+}
+
+func (t SignalType) String() string {
+	idx := t - 1
+	if idx < SIGNAL_LONG || idx > SIGNAL_NO_SIGANL {
+		return "Unknown"
+	}
+	return signalTypeNames[idx]
+}
+
 type SignalResult struct {
 	Symbol     string
 	Signal     SignalType
